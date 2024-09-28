@@ -1,0 +1,56 @@
+<!-- data-exploration.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Exploration</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#model-insights">Model Insights</a></li>
+				<li><a href="#policy-support">Policy Support</a></li>
+				<li><a href="#public-dashboard">Public Dashboard</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="interactive-map">
+			<h1>Interactive Map</h1>
+			<div id="map"></div>
+		</section>
+		<section id="filters">
+			<h1>Filters</h1>
+			<div id="filter-form">
+				<label for="time">Time:</label>
+				<select id="time">
+					<option value="historical">Historical</option>
+					<option value="real-time">Real-time</option >
+				</select>
+				<label for="pollutant">Pollutant:</label>
+				<select id="pollutant">
+					<option value="PM2.5">PM2.5</option>
+					<option value="CO2">CO2</option>
+				</select>
+				<label for="region">Region:</label>
+				<select id="region">
+					<option value="city">City</option>
+					<option value="state">State</option>
+					<option value="country">Country</option>
+				</select>
+			</div>
+		</section>
+		<section id="data-visualization">
+			<h1>Data Visualization</h1>
+			<div id="charts"></div>
+		</section>
+		<section id="download-options">
+			<h1>Download Options</h1>
+			<button id="download-btn">Download Data</button>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
