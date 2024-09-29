@@ -1,39 +1,44 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Air Quality Platform</title>
-	<link rel="stylesheet" href="styles.css">
+    <title>Air Quality Platform</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<nav>
-			<ul>
-				<li><a href="#data-exploration">Data Exploration</a></li>
-				<li><a href="#model-insights">Model Insights</a></li>
-				<li><a href="#policy-support">Policy Support</a></li>
-				<li><a href="#public-dashboard">Public Dashboard</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section id="overview">
-			<h1>Overview of the Platform</h1>
-			<p>A brief introduction explaining the purpose of the tool...</p>
-		</section>
-		<section id="real-time-air-quality-map">
-			<h1>Real-Time Air Quality Map</h1>
-			<div id="map"></div>
-		</section>
-		<section id="quick-access">
-			<h1>Quick Access to Key Features</h1>
-			<div id="buttons">
-				<button id="data-download-btn">Download Data</button>
-				<button id="comparison-tool-btn">Comparison Tool</button>
-				<button id="ai-model-insights-btn">AI Model Insights</button>
-			</div>
-		</section>
-	</main>
-	<script src="script.js"></script>
+    <header class="header">
+        <div class="buttons">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#data-exploration"><button class="btn">Data Exploration</button></a></li>
+                    <li><a href="#model-insights"><button class="btn">Model Insights</button></a></li>
+                    <li><a href="#policy-support"><button class="btn">Policy Support</button></a></li>
+                    <li><a href="#public-dashboard"><button class="btn">Public Dashboard</button></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="interactive-overview-container">
+            <div id="interactive-overview" class="futuristic-box">
+                <h1>Project Overview</h1>
+                <p>Air quality monitoring faces significant challenges, primarily due to the limitations of current satellite-based data, which often lacks the spatial resolution necessary for localized assessments...</p>
+                <button class="cta-button" onclick="showMore()">Explore More</button>
+            </div>
+        </section>        
+        <section id="real-time-air-quality-map">
+                <h1>Real-Time Air Quality Map</h1>
+                <img src="C:\Users\keshv\OneDrive\Desktop\35871-POISON_IVY\SIH2024\Downscalling img.jpg" alt="Real-Time Air Quality Map" id="air-quality-map" />
+                <div id="map"></div>
+        </section>
+        <section id="quick-access">
+            <h1>Quick Access to Key Features</h1>
+            	<div id="buttons">
+                	<button id="data-download-btn">Download Data</button>
+                	<button id="comparison-tool-btn">Comparison Tool</button>
+                	<button id="ai-model-insights-btn">AI Model Insights</button>
+            	</div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
